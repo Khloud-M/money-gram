@@ -130,9 +130,15 @@ export default {
   }
   div:first-child {
     clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+    @media (max-width: 480px) {
+      margin-left: -22px;
+    }
   }
   div:last-child {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 55%, 0% 0%);
+    @media (max-width: 480px) {
+      margin-right: -22px;
+    }
   }
   div {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
@@ -146,6 +152,7 @@ export default {
     line-height: 80px;
     @media (max-width: 480px) {
       margin-right: -10px;
+      margin-left: -10px;
     }
   }
 }
@@ -167,9 +174,6 @@ export default {
     background-color: #969a98;
     margin-top: 50px;
   }
-  p {
-    font-weight: 700;
-  }
   span {
     color: #4998af;
     font-weight: 700;
@@ -182,7 +186,7 @@ export default {
     margin-top: 30px;
     font-size: 20px;
     @media (max-width: 480px) {
-      font-size: 16px;
+      font-size: 14px;
 
     }
   }
@@ -195,6 +199,7 @@ export default {
   padding: 8px;
   color: #969a98;
   font-size: 18px;
+  // text-align: start;
 }
 .table tr:last-child td {
   border-bottom: none;
