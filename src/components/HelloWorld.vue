@@ -177,13 +177,16 @@ export default {
   span {
     color: #4998af;
     font-weight: 700;
+    margin-top: -10px;
+    display: block;
+  
   }
   .details_proccess {
     margin-top: 20px;
   }
   .notes {
     color: #969a98;
-    margin-top: 30px;
+    // margin-top: 30px;
     font-size: 20px;
     @media (max-width: 480px) {
       font-size: 14px;
