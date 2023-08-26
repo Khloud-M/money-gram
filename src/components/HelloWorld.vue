@@ -144,6 +144,9 @@ export default {
     height: 80px;
     width: 300px;
     line-height: 80px;
+    @media (max-width: 480px) {
+      margin-right: -10px;
+    }
   }
 }
 .ready {
@@ -178,6 +181,10 @@ export default {
     color: #969a98;
     margin-top: 30px;
     font-size: 20px;
+    @media (max-width: 480px) {
+      font-size: 16px;
+
+    }
   }
 }
 .table {
