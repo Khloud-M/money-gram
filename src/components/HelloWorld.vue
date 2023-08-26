@@ -4,13 +4,48 @@
     <hr />
     <div class="container">
       <div class="process">
-        <div class="col-lg-3">1</div>
-        <div class="col-lg-3">2</div>
-        <div class="col-lg-3">3</div>
+        <div class="col-lg-3">تم الاستلام</div>
+        <div class="col-lg-3">
+          <svg
+            fill="#000000"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 32 32"
+            xml:space="preserve"
+            width="25px"
+            height="25px"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                id="time_1_"
+                d="M16,31.36C7.53,31.36,0.64,24.47,0.64,16S7.53,0.64,16,0.64S31.36,7.53,31.36,16S24.47,31.36,16,31.36z M15.64,28h0.72v2.636c7.788-0.188,14.087-6.488,14.276-14.276H28v-0.72h2.636C30.447,7.853,24.147,1.553,16.36,1.364V4h-0.72V1.364C7.853,1.553,1.553,7.853,1.364,15.64H4v0.72H1.364c0.189,7.788,6.488,14.087,14.276,14.276V28z M22.748,20.312l-7.108-4.104V6h0.72v9.792l6.748,3.896L22.748,20.312z"
+              ></path>
+              <rect
+                id="_Transparent_Rectangle"
+                style="fill: none"
+                width="15"
+                height="15"
+              ></rect>
+            </g>
+          </svg>
+        </div>
+        <div class="col-lg-3">قيد المعالجة</div>
       </div>
       <!-- end process -->
+      <div class="ready">
+        <h5>جاهز للاستلام</h5>
+        <p>MoneyGramأصبح المال جاهزا للاستلام من موقع ل</p>
+      </div>
       <div class="steps">
-        <hr/>
+        <hr />
         <h5>الخطوات التالية :</h5>
         <p>على المستلم إحضار بطاقة الهوية و رقم مرجعيا لاستلام المال</p>
         <span> ابحث عن موقع </span>
@@ -79,31 +114,58 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" >
+.logo {
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
 .process {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 5px;
-  // &:nth-child(1){
-  //   // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
-  //   // width: 280px;
-  //   // height: 280px;
-  // }
+  margin-top: 30px;
+  div:first-child,
+  div:last-child {
+    background-color: #f6f6f6;
+  }
+  div:first-child {
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+  }
+  div:last-child {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 55%, 0% 0%);
+  }
   div {
-    background-color: gray;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    background-color: #009744;
+    color: #969a98;
+    text-align: center;
+    font-weight: 700;
+    margin-right: -65px;
+    height: 80px;
+    width: 300px;
+    line-height: 80px;
+  }
+}
+.ready {
+  margin: 50px;
+  text-align: center;
+  h5 {
+    color: #009744;
+  }
+  p {
+    color: #969a98;
   }
 }
 .steps {
   background-color: #f6f6f6;
   padding: 30px;
   margin-top: 50px;
-  hr{
+  hr {
     background-color: #969a98;
     margin-top: 50px;
   }
-  p{
+  p {
     font-weight: 700;
-    
   }
   span {
     color: #4998af;
@@ -113,7 +175,6 @@ export default {
     margin-top: 20px;
   }
   .notes {
-    color: #565f5c;
     color: #969a98;
     margin-top: 30px;
     font-size: 20px;
