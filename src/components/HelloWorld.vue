@@ -129,24 +129,29 @@ export default {
     background-color: #f6f6f6;
   }
   div:first-child {
-    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(100% 10%, 100% 50%, 100% 100%, 0% 100%, 0% 55%, 0% 10%);
+    // clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+    // background-color: blue;
     @media (max-width: 480px) {
       margin-left: -22px;
     }
   }
   div:last-child {
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 55%, 0% 0%);
+    clip-path: polygon(84% 10%, 100% 50%, 84% 100%, 0% 100%, 0 55%, 0% 10%);
+    // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
+    // background-color: red;
     @media (max-width: 480px) {
       margin-right: -22px;
     }
   }
   div {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(84% 10%, 100% 50%, 84% 99%, 0% 100%, 0 55%, 0% 10%);
     background-color: #009744;
     color: #969a98;
     text-align: center;
     font-weight: 700;
-    margin-right: -65px;
+    margin-right: -60px;
     height: 80px;
     width: 300px;
     line-height: 80px;
