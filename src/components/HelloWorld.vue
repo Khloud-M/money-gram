@@ -131,6 +131,7 @@ export default {
   div:first-child {
     clip-path: polygon(100% 10%, 100% 50%, 100% 100%, 0% 100%, 0% 55%, 0% 10%);
     // clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
     // background-color: blue;
     @media (max-width: 480px) {
       margin-left: -22px;
@@ -139,6 +140,8 @@ export default {
   div:last-child {
     clip-path: polygon(84% 10%, 100% 50%, 84% 100%, 0% 100%, 0 55%, 0% 10%);
     // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 49%, 0% 0%);
+
     // background-color: red;
     @media (max-width: 480px) {
       margin-right: -22px;
@@ -147,6 +150,7 @@ export default {
   div {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     clip-path: polygon(84% 10%, 100% 50%, 84% 99%, 0% 100%, 0 55%, 0% 10%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     background-color: #009744;
     color: #969a98;
     text-align: center;
@@ -158,6 +162,8 @@ export default {
     @media (max-width: 480px) {
       margin-right: -10px;
       margin-left: -10px;
+      height: 50px;
+      line-height: 50px;
     }
   }
 }
@@ -184,7 +190,6 @@ export default {
     font-weight: 700;
     margin-top: -10px;
     display: block;
-  
   }
   .details_proccess {
     margin-top: 20px;
@@ -195,7 +200,6 @@ export default {
     font-size: 20px;
     @media (max-width: 480px) {
       font-size: 14px;
-
     }
   }
 }
