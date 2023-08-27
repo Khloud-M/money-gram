@@ -4,8 +4,8 @@
     <hr />
     <div class="container">
       <div class="process">
-        <div class="col-lg-6">تم الاستلام</div>
-        <div class="pattern">
+        <div class="col-lg-3">تم الاستلام</div>
+        <div class="col-lg-3">
           <svg
             fill="#000000"
             version="1.1"
@@ -37,7 +37,7 @@
             </g>
           </svg>
         </div>
-        <div class="col-lg-6">قيد المعالجة</div>
+        <div class="col-lg-3">قيد المعالجة</div>
       </div>
       <!-- end process -->
       <div class="ready">
@@ -126,64 +126,51 @@ export default {
   flex-direction: row;
   justify-content: center;
   margin-top: 30px;
-  .pattern {
-    position: absolute;
-    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 22% 50%, 10% 0%);
-    background-color: #009744;
-    width: 300px;
-    @media (max-width: 480px) {
-      width: 150px;
+  // .pattern {
+  //   position: absolute;
+  //   clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 22% 50%, 10% 0%);
+  //   background-color: #009744;
+  //   width: 300px;
+  //   @media (max-width: 480px) {
+  //     width: 150px;
 
-    }
+  //   }
   
-  }
+  // }
   div:first-child,
   div:last-child {
     background-color: #f6f6f6;
     // background-color: red;
-    width: 350px;
+    // width: 350px;
 
   }
   div:first-child {
-    // clip-path: polygon(100% 10%, 100% 50%, 100% 100%, 0% 100%, 0% 55%, 0% 10%);
-    // // clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
-    // clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 11% 50%, 0% 0%);
     // background-color: blue;
     // text-align: start;
-    padding-left: 100px;
+    margin-left: -20px;
     @media (max-width: 480px) {
-      margin-left: -22px;
+      margin-left: 1px;
     }
   }
   div:last-child {
-    // clip-path: polygon(84% 10%, 100% 50%, 84% 100%, 0% 100%, 0 55%, 0% 10%);
-    // clip-path: polygon(77% 0%, 100% 50%, 77% 100%, 0% 100%, 0 50%, 0% 0%);
-    // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 49%, 0% 0%);
+    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 55%, 0% 0%);
+    margin-right: -50px;
     // background-color: red;
-
-    // background-color: red;
-    // text-align: end;
-    // padding-left: 100px;
-
     @media (max-width: 480px) {
-      // margin-right: -22px;
-    padding-left: 0px;
+      margin-right: -10px;
 
     }
   }
   div {
-    // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-    // clip-path: polygon(84% 10%, 100% 50%, 84% 99%, 0% 100%, 0 55%, 0% 10%);
-    // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 23% 50%, 0% 0%);
-    // clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 22% 50%, 10% 0%);
-
-    // background-color: #009744;
+    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 22% 50%, 10% 0%);
+    background-color: #009744;
     color: #969a98;
     text-align: center;
     font-weight: 700;
-    // margin-right: -63px;
+    // margin-right: -50px;
     height: 80px;
-    // width: 300px;
+    width: 300px;
     line-height: 80px;
     @media (max-width: 480px) {
       margin-right: -10px;
@@ -206,7 +193,7 @@ export default {
 .steps {
   background-color: #f6f6f6;
   margin-top: 50px;
-  padding-top: 30px;
+  padding: 30px 0 ;
   hr {
     background-color: #969a98;
     margin-top: 50px;
