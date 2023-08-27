@@ -46,9 +46,11 @@
       </div>
       <div class="steps">
         <hr />
-        <h5>الخطوات التالية :</h5>
-        <p>على المستلم إحضار بطاقة الهوية و رقم مرجعيا لاستلام المال</p>
-        <span> ابحث عن موقع </span>
+        <div class="content">
+          <h5>الخطوات التالية :</h5>
+          <p>على المستلم إحضار بطاقة الهوية و رقم مرجعيا لاستلام المال</p>
+          <span> ابحث عن موقع </span>
+        </div>
 
         <div class="details_proccess">
           <h5>تفاصيل العملية :</h5>
@@ -181,12 +183,15 @@ export default {
 }
 .steps {
   background-color: #f6f6f6;
-  padding: 30px;
   margin-top: 50px;
+  padding-top: 30px;
   hr {
     background-color: #969a98;
     margin-top: 50px;
     width: 100%;
+  }
+  .content {
+    padding: 30px;
   }
   span {
     color: #4998af;
@@ -196,6 +201,7 @@ export default {
   }
   .details_proccess {
     margin-top: 20px;
+    padding: 30px;
   }
   .notes {
     color: #969a98;
@@ -214,6 +220,10 @@ export default {
   padding: 8px;
   color: #969a98;
   font-size: 18px;
+  font-size: 20px;
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
   // text-align: start;
 }
 .table tr:last-child td {
