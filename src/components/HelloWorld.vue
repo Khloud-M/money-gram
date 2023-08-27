@@ -139,8 +139,9 @@ export default {
   }
   div:last-child {
     clip-path: polygon(84% 10%, 100% 50%, 84% 100%, 0% 100%, 0 55%, 0% 10%);
-    // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 49%, 0% 0%);
+    clip-path: polygon(77% 0%, 100% 50%, 77% 100%, 0% 100%, 0 50%, 0% 0%);
+    // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 49%, 0% 0%);
+    // background-color: red;
 
     // background-color: red;
     @media (max-width: 480px) {
@@ -150,12 +151,13 @@ export default {
   div {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     clip-path: polygon(84% 10%, 100% 50%, 84% 99%, 0% 100%, 0 55%, 0% 10%);
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 23% 50%, 0% 0%);
+    // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0 100%, 20% 51%, 0 0);
     background-color: #009744;
     color: #969a98;
     text-align: center;
     font-weight: 700;
-    margin-right: -60px;
+    margin-right: -63px;
     height: 80px;
     width: 300px;
     line-height: 80px;
@@ -184,6 +186,7 @@ export default {
   hr {
     background-color: #969a98;
     margin-top: 50px;
+    width: 100%;
   }
   span {
     color: #4998af;
