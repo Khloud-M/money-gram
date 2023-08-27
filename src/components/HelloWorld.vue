@@ -191,7 +191,7 @@ export default {
     width: 100%;
   }
   .content {
-    padding: 30px;
+    padding: 0px 30px;
   }
   span {
     color: #4998af;
@@ -201,14 +201,14 @@ export default {
   }
   .details_proccess {
     margin-top: 20px;
-    padding: 30px;
+    padding: 0px 30px;
   }
   .notes {
     color: #969a98;
     // margin-top: 30px;
     font-size: 20px;
     @media (max-width: 480px) {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 }
