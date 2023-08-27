@@ -201,6 +201,11 @@ export default {
   }
   .content {
     padding: 0px 30px;
+    p{
+      @media (max-width: 480px) {
+      font-size: 15px;
+    } 
+    }
   }
   span {
     color: #4998af;
